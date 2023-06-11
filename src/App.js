@@ -7,11 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Sidebar from "./pages/global/Sidebar";
 import { ProSidebarProvider } from "react-pro-sidebar";
-import Team from "./pages/team";
-import Contact from "./pages/contacts";
-import Invoice from "./pages/invoice";
-import Profile from "./pages/profile";
-import Calendar from "./pages/calendar";
+import Users from "./pages/users";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -27,11 +23,11 @@ function App() {
               <Topbar />
               <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/users" element={<Users />} />
+                {/* <Route path="/contact" element={<Contact />} />
                 <Route path="/invoice" element={<Invoice />} />
                 <Route path="/form" element={<Profile />} />
-                <Route path="/calendar" element={<Calendar />} />
+                <Route path="/calendar" element={<Calendar />} /> */}
               </Routes>
             </main>
           </div>
